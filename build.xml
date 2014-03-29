@@ -7,7 +7,7 @@
 <property name="project" value="project"/>
 
 <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
-<property name="sonar.jdbc.url" value="jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf" />
+<property name="sonar.jdbc.url" value="jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true" />
 <property name="sonar.jdbc.username" value="sonar" />
 <property name="sonar.jdbc.password" value="sonar" />
 
