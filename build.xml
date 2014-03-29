@@ -17,7 +17,7 @@
 <property name="sonar.projectVersion" value="1.0" />
 <property name="sonar.language" value="java" />
 <property name="sonar.sources" value="${src}" />
-<property name="sonar.binaries" value="${project}/*.jar" />
+<!--property name="sonar.binaries" value="${project}/*.jar" /-->
 
 
 <target name="compile">
