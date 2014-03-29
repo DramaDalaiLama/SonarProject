@@ -1,0 +1,31 @@
+<project name="TestProject" default="jar" basedir=".">
+	
+	
+	
+<property name="src" location="src"/>
+<property name="classes" location="classes"/>
+<property name="project" value="project"/>
+
+<target name="compile">
+	<mkdir dir="${classes}" />
+	<javac srcdir="${src}" destdir="${classes}">
+		<compilerarg value="-Xlint:unchecked"/>
+		<compilerarg value="-Xlint:deprecation"/>
+	</javac>
+</target>
+
+
+<target name="jar" depends="compile">
+	<mkdir dir="${project}" />
+	<jar destfile="${project}/Sudoku.jar" basedir="${classes}">
+		<manifest>
+			<attribute name="Main-Class" value="oyg.sudoku.CreateSudokuGUI"/>
+		</manifest>
+	</jar>
+</target>
+
+<target name="clean">
+	<delete dir="${classes}"/>
+</target>
+
+</project>
